@@ -1,0 +1,26 @@
+I"³(function() {
+  var e, i, j, k, l, len, len1, len2;
+
+  for (i = j = 0, len = a.length; j < len; i = ++j) {
+    e = a[i];
+    if (i === 0) {
+      console.log(a[i]);
+    }
+  }
+
+  for (i = k = 0, len1 = a.length; k < len1; i = ++k) {
+    e = a[i];
+    if (i === 0) {
+      console.log(e);
+    }
+  }
+
+  for (i = l = 0, len2 = a.length; l < len2; i = ++l) {
+    e = a[i];
+    if (i === 0) {
+      console.log(e);
+    }
+  }
+
+}).call(this);
+:ET

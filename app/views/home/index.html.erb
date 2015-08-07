@@ -1,0 +1,19 @@
+<h1>Welcome</h1>
+<% @questions.each do |q| %>
+<div class="media" data-target="<%= question_path(q) %>">
+  <div class="media-left">
+    <%=link_to image_tag(q.gravatar), size: '50x50', class: "media-object" %>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= q.email %> Asked:</h4>
+   <div class="time hidden-xs"> <%=time_ago_in_words q.created_at %> ago</div>
+   <div> <%= truncate q.body,length:300 %></div>
+    <div>
+      <a href="<%= question_path(q) %>" class="btn btn-success btn-xs hidden-xs"><%= "View Answers (#{pluralize(q.answers.count,'answer')})" %></a>
+    </div>
+  </div>
+</div>
+<% end %>
+<% if @questions.empty? %>
+    <div class="alert alert-info">Still no any question created.</div>
+<%end %>

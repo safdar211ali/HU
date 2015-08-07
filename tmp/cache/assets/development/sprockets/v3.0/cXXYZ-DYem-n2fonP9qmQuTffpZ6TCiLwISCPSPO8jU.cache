@@ -1,0 +1,11 @@
+I"®(function() {
+  var ready;
+
+  ready = function() {
+    console.log('test');
+    $(document).ready(ready);
+    return $(document).on("page:load", ready);
+  };
+
+}).call(this);
+:ET

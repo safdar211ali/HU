@@ -1,0 +1,7 @@
+I"_(function() {
+  jQuery(function() {
+    return console.log('test');
+  });
+
+}).call(this);
+:ET

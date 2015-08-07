@@ -1,0 +1,11 @@
+I"Á(function() {
+  var ready;
+
+  ready = function() {
+    $(".media").on("click", function() {});
+    $(document).ready(ready);
+    return $(document).on("page:load", ready);
+  };
+
+}).call(this);
+:ET
